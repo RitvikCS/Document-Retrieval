@@ -9,7 +9,7 @@
 4. Enter your query and press Enter twice and wait for results.
 5. Press 0 to exit or 1 to give another query.
 
-
+---
 
 >LOAD CUSTOM DATASETS INTO PROGRAMS
 > 1. open ir_asst1.py source file,
@@ -19,6 +19,8 @@
 
 **Dataset must be in txt format to parse.**
 
-> Note
-> * Preprocessing the data takes sometime as generally the datasets are huge in number.
-> * You will need NLTK package, Numpy package for successful compilation.
+--- 
+
+### Note:
+ * Preprocessing the data takes sometime as generally the datasets are huge in number.
+ * You will need NLTK package, Numpy package for successful compilation.
