@@ -1,0 +1,50 @@
+Help on module ir_asst1:
+
+NAME
+    ir_asst1
+
+DESCRIPTION
+    Domain Specific Search Retrival System by :
+
+    S.Devendra Dheeraj Gupta  -  2017B5A70670H
+    K.Srinivas  -  2017B3A70746H
+    Abhirath Singh -  2018A7PS0521H
+    Ritvik C -  2018A7PS0180H
+
+FUNCTIONS
+    docFrequency(vocab, dict)
+        The number of docs containing the word.
+        We use count dictionary to return the df dictionary.
+    
+    inverseDocFreq(vocab, doc_fre, length)
+        returns idf dictionary.
+
+    invertedindex(dict)
+        In this function we remove stop words and also
+        stem the words using ntlk PorterStemmer library.
+        This function takes the dict as input and returns
+        list of words which are not in stop words. Also we precompute
+        word_in_doc and count dictionary to be use in other function.
+    
+    read_files(path)
+        this function takes input absolute path of the dataset
+        and returns a dictionary dict which has docs name as key and
+        the value as the text of the docs.
+    
+    termFrequency(vocab, dict)
+        Term frequency is how many times a term is present in the doc.
+        We use the count dictionary that we computed aleady.
+    
+    tfidf(vocab, tf, idf_scr, doc_dict)
+        Calculate tf-idf to be used in calculating the score of query.
+    
+    vectorSpaceModel(query, doc_dict, tfidf_scr, vocab)
+	Calculates relevant documents related to the query.
+    
+
+DATA
+    count = {}
+    ps = <PorterStemmer>
+    stopwords = <WordListCorpusReader in '.../corpora/stopwords' 
+    word_in_doc = {}
+
